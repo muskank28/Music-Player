@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="shortcut icon" href="musical-note.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio src="" id="audio"></audio>
+
+    <div class="music-player">
+
+        <h1 class="music-name">Song One</h1>
+        <p class="artist-name"><i>artist name
+        </i></p>
+
+        <div class="album-cover play"></div>
+
+        <div class="song-slider">
+            <input type="range" value="0" class="seek-bar">
+            <span class="current-time">00:00</span>
+            <span class="song-duration">00:00</span>
+        </div>
+
+        <div class="controls">
+            <button class="prev-btn"><<</button>
+            <button class="play-btn pause">
+                <span></span>
+                <span></span>
+            </button>
+            <button class="next-btn">>></button>
+        </div>
+
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
